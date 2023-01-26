@@ -1,0 +1,46 @@
+{
+    "author": "AgniPro",
+	"manifest_version": 2,
+	"version": "0.1",
+    "name": "vieURL",
+    "short_name": "vieURL",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "any",
+    "start_url": "/",
+    "background_color": "#17a2b8",
+    "theme_color": "#17a2b8",
+    "display": "standalone",
+    "description": "vieURL is a platform where you can download videos from many sites an youtube also",
+    "icons": [
+      {
+        "src": "/assets/vieURL-72-72.png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "/assets/vieURL-96-96.png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/assets/vieURL-128.png.png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "/assets/vieURL-144-144.png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/assets/vieURL-152.png.png",
+        "sizes": "152x152"
+      },
+      {
+        "src": "/assets/vieURL-192-192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/vieURL-512-512.png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
