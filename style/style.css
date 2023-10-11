@@ -54,6 +54,22 @@ body {
   font-weight: 1.1rem;
   line-height: 2.3rem;
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 5px;
+}
+::selection {
+    color: #fff;
+    background: var(--bgDl);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
 /* header section */
 
 body.mobile-open {
