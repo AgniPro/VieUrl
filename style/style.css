@@ -52,10 +52,12 @@
     font-size: 1.5rem;
     font-weight: 1.1rem;
     line-height: 2.3rem;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
     scroll-behavior: smooth;
   }
+  body::-webkit-scrollbar {
+    display: none;
+}
   ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 4px;
