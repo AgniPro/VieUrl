@@ -6,21 +6,49 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- <script>
+function downloadVideo(url) {
+  fetch(url)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'video.mp4';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+}
+
+// Example usage
+const videoUrl = "https://rr1---sn-gwpa-pmgl.googlevideo.com/videoplayback?expire=1695284307&ei=86cLZZ7gNuGU1d8PjOWx2Ao&ip=180.76.13.11&id=o-AMHmiyhhERZ-aiB7kbYMQNrhETDMeXlCZ7aVR7LEL8Cr&itag=22&source=youtube&requiressl=yes&spc=UWF9f4iDzQ3aNm4E3SUOrrFeuq3P49c&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=249.010&lmt=1642086577242255&fexp=24007246&c=ANDROID&txp=6211224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhALehOEzoJCb9rfQF9IQLhEyg1HaXFV0SxZ6BB3ondKAGAiAqc02PNhNSl4WzxMcV_wEctqXeT7BNPndD_73YWPya1w%3D%3D&redirect_counter=1&rm=sn-i3bds76&req_id=30018929731da3ee&cms_redirect=yes&ipbypass=yes&mh=lW&mip=2405:201:a421:eb:4017:378f:e99e:1fb1&mm=31&mn=sn-gwpa-pmgl&ms=au&mt=1695263850&mv=m&mvi=1&pl=48&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgFRIMACpw_UdpYuTwW1RWx5YK8bmAFyAolNXxjiOLoNECIE8-rNAzShH8OucTvcNfrQatSFz09FVfzF3QC9culUu9"
+downloadVideo(videoUrl);
+
+  </script> -->
   <script>
-fetch('https://api.api-ninjas.com/v1/quotes?category=', {
-  method: 'GET',
-  headers: {
-    'X-Api-Key': 'l0Oamt4g5R2BBYD/hcPGzw==WwLYUolHL64neY2D',
-    'Content-Type': 'application/json'
-  }
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
+    fetch('https://cors-anywhere.herokuapp.com/https://api.ytbvideoly.com/api/thirdvideo/parse?link=https://www.youtube.com/watch?v=KvUS_3fz3QE%26index=1&from=videodownloaded')
+  .then(response => response.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    // You can now manipulate the DOM using the 'doc' object
+  })
+  .catch(error => console.error(error));
 
+    function downloadVideo(url) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'download video.mp4';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 
-  </script>
+const videoUrl = 'https://rr1---sn-gwpa-pmgl.googlevideo.com/videoplayback?expire=1695284307&ei=86cLZZ7gNuGU1d8PjOWx2Ao&ip=180.76.13.11&id=o-AMHmiyhhERZ-aiB7kbYMQNrhETDMeXlCZ7aVR7LEL8Cr&itag=22&source=youtube&requiressl=yes&spc=UWF9f4iDzQ3aNm4E3SUOrrFeuq3P49c&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=249.010&lmt=1642086577242255&fexp=24007246&c=ANDROID&txp=6211224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhALehOEzoJCb9rfQF9IQLhEyg1HaXFV0SxZ6BB3ondKAGAiAqc02PNhNSl4WzxMcV_wEctqXeT7BNPndD_73YWPya1w%3D%3D&redirect_counter=1&rm=sn-i3bds76&req_id=8e789caf04d2a3ee&cms_redirect=yes&ipbypass=yes&mh=lW&mip=2405:201:a421:eb:4017:378f:e99e:1fb1&mm=31&mn=sn-gwpa-pmgl&ms=au&mt=1695262409&mv=m&mvi=1&pcm2cms=yes&pl=48&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRQIgUxuKjtDVDk-Yv5Q481Bab73NWirVHw12WpyfJs3Tv4UCIQClHxmE9R4z9sUQBXbkRY1a73FOCgCWJnyC6V-wotEkdA%3D%3D';
+// downloadVideo(videoUrl);
 
+</script>
   <script src="/TEST/test.js"></script>
 </body>
 </html>
